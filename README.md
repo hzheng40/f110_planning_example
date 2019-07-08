@@ -6,7 +6,13 @@ A* and Dijkstra's toy example in racecar simulator
 ## Quick start
 
 To run the example, make sure you already have mLab's racecar simulator working first.
-Then:
+Then clone this repo to your ```catkin_ws/src```:
+
+```
+git clone https://github.com/hzheng40/f110_planning_example.git planning_example
+```
+
+To run the example:
 
 ```
 roslaunch planning_example planning_toy.launch

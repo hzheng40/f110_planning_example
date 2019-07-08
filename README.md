@@ -12,4 +12,8 @@ Then:
 roslaunch planning_example planning_toy.launch
 ```
 
+In RVIZ, use the ```2D Pose Estimate``` tool to set the start point on the map. Then use the ```2D Nav Goal``` tool to set the goal point on the map. Once the algorithm runs for the first time, changing either the start point or the goal point will trigger the planning.
+
+The green cubes in the visualization represents the expansion frontier. The red cubes represents the visited set. And the blue cube represents the current node. The gree path represents the path found by the algorithm.
+
 The default algorithm used is A*, to change to Dijkstra's, change the variable ```self.use_astar``` to ```False``` in ```scripts/planning_toy.py```.
